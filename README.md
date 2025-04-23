@@ -1,4 +1,4 @@
-# ☕ Tea Spillers - Billing Syste
+# ☕ Tea Spillers - Billing System
 
 Tea Spillers is a simple and beginner-friendly billing system built with **Python** and **Tkinter** for the GUI. It simulates a basic Point of Sale (POS) system where users can place orders, apply discounts based on customer type, and generate a printable receipt.
 
