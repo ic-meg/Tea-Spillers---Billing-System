@@ -1,0 +1,30 @@
+cd \
+cd xampp\mysql\bin
+mysql -u root -p
+
+create database dbCvSU;
+use dbCvSU;
+create table tblStudents(StudentID int(10) primary key not null, Student_Name varchar(20) not null, Address varchar(50) not null, Contact_Number int(11) not null, Course varchar(5) not null);
+
+INSERT INTO tblStudents VALUES(1, 'Meg Angeline', 'Imus', 0911, 'BSIT');
+INSERT INTO tblStudents VALUES(2, 'Daniela Faith', 'Bacoor', 0922, 'BSIT');
+INSERT INTO tblStudents VALUES(3, 'Krischelle', 'Las Pinas', 0933, 'BSIT');
+INSERT INTO tblStudents VALUES(4, 'Shanley', 'Imus', 0944, 'BSIT');
+INSERT INTO tblStudents VALUES(5, 'Kristine', 'Imus', 0955, 'BSIT');
+INSERT INTO tblStudents VALUES(6, 'Ginna', 'Imus', 0966, 'BSIT');
+INSERT INTO tblStudents VALUES(7, 'Pamela', 'Imus', 0977, 'BSIT');
+INSERT INTO tblStudents VALUES(8, 'Kate', 'Imus', 0988, 'BSIT');
+INSERT INTO tblStudents VALUES(9, 'Hazel Mae', 'Imus', 0999, 'BSIT');
+INSERT INTO tblStudents VALUES(10, 'Meg', 'Imus', 0910, 'BSIT');
+
+UPDATE tblStudents SET Student_Name = 'Jennie', Address = 'Korea', Course = 'BSHM' WHERE StudentID = 10;
+UPDATE tblStudents SET Contact_Number = 0947 where StudentID = 1;
+
+SELECT DISTINCT Address FROM tblStudents;
+SELECT * FROM tblStudents WHERE StudentID BETWEEN 3 and 6;
+SELECT * FROM tblStudents WHERE StudentID = 1 AND Student_Name = 'Meg Angeline';
+SELECT * FROM tblStudents WHERE StudentID = 10 OR Address = 'Las Pinas';
+SELECT * FROM tblStudents WHERE NOT Address = 'Imus';
+SELECT * FROM tblStudents WHERE Student_Name LIKE '%NNIE';
+SELECT * FROM tblStudents; 
+SELECT * FROM tblStudents WHERE course = 'BSIT';
